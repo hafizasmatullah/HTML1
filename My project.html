@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .quiz-box{
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+        }
+        h1{
+              text-align: center;
+              color: #333;
+        }
+        .question{
+
+            margin: 20px;
+        }
+        h3{
+             color: #444;
+        }
+        label{
+               display: block;
+               margin: 8px 0;
+        }
+        .buttons{
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+        button:hover{
+               background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+       <div class="quiz-box">
+              <h1>HTML Quiz</h1> 
+              <form id="quizForm">
+                    <div class="question">
+                        <h3>1. What does HTML stand for?</h3>
+                        <label><input type="radio" name="q1" value="a"> Hyper text Markup Language</label>
+                        <label><input type="radio" name="q1" value="b"> Home Tool Markup Language</label>
+                        <label><input type="radio" name="q1" value="c"> Hyperlink and Text Markup Language</label>
+                    </div>
+                    <div class="question">
+                           <h3>2. Who is making the web standards?</h3>
+                           <label><input type="radio" name="q2" value="a"> Microsoft</label>
+                           <label><input type="radio" name="q2" value="b"> Mozilla</label>
+                           <label><input type="radio" name="q2" value="c"> The world wide web consortium</label>
+                    </div>
+                    <div class="question">
+                           <h3>3. Choose the correct HTML element for the largest heading:</h3>
+                           <label><input type="radio" name="q3" value="a"> &lt;heading&gt;</label>
+                           <label><input type="radio" name="q3" value="b"> &lt;h6&gt;</label>
+                           <label><input type="radio" name="q3" value="c"> &lt;h1&gt;</label>
+                    </div>
+                    <button type="submit" class="buttons">Submit</button>
+             </form>
+             <div id="result"></div>
+       </div>
+
+       <script src="./script.js"></script>
+    
+</body>
+</html>
